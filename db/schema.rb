@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_03_211033) do
-
+ActiveRecord::Schema[7.0].define(version: 2021_05_03_211033) do
   create_table "birds", force: :cascade do |t|
     t.string "name"
     t.string "species"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer "likes", default: 0, null: false
   end
 
